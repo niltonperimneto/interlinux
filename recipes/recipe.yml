@@ -30,7 +30,10 @@ modules:
     remove:
       - firefox
       - firefox-langpacks
-
+    keys:
+      - https://packages.microsoft.com/keys/microsoft.asc
+      - https://dl.google.com/linux/linux_signing_key.pub
+      
   - type: default-flatpaks
     configurations:
       - notify: true
@@ -47,13 +50,5 @@ modules:
           - io.github.shiftey.Desktop
           - io.github.dvlv.boxbuddyrs
       - scope: user
-
-  - type: users
-    users:
-      - name: inglesinternational
-        full-name: Ingles International
-        groups:
-          - wheel
-          - users
 
   - type: signing

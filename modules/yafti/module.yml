@@ -1,0 +1,7 @@
+name: yafti
+shortdesc: The yafti module can be used to install yafti and set it up to run on first boot.
+example: |
+  type: yafti
+  custom-flatpaks:
+      - Celluloid: io.github.celluloid_player.Celluloid
+      - Krita: org.kde.krita

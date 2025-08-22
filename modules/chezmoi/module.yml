@@ -1,0 +1,8 @@
+name: chezmoi
+shortdesc: The chezmoi module installs the latest chezmoi release at build time, along with services to clone a dotfile repository and keep it up-to-date.
+example: |
+  type: chezmoi
+  repository: "https://github.com/octocat/dotfiles" # my dotfiles repo
+  all-users: false # make users have to enable chezmoi manually
+  file-conflict-policy: replace # override changed files with those from the repo
+
