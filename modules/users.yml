@@ -1,8 +1,0 @@
-# This module defines user configurations for the custom image.
-
-users:
-  - name: inglesinternational
-    full-name: Ingles International
-    groups:
-      - wheel
-      - users

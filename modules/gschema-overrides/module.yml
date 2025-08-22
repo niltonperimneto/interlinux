@@ -1,6 +1,0 @@
-name: gschema-overrides
-shortdesc: The `gschema-overrides` module can be used for including system-setting overrides for GTK-based desktop environments.
-example: |
-  type: gschema-overrides
-  include:
-    - zz1-myoverride.gschema.override # test & compile specific override file included in files/gschema-overrides/zz1-myoverride.gschema.override

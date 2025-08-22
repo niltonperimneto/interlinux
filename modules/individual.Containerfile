@@ -1,6 +1,0 @@
-FROM scratch
-
-ARG DIRECTORY
-ARG NAME
-
-COPY ${DIRECTORY} /modules/${NAME}
