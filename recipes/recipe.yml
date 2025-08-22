@@ -25,6 +25,8 @@ modules:
       - code
       - google-chrome-stable
       - pycharm-community
+      - development-tools
+      - python3-pip
     remove:
       - firefox
       - firefox-langpacks
@@ -45,6 +47,8 @@ modules:
           - edu.mit.Scratch
           - org.onlyoffice.desktopeditors
           - org.vinegarhq.Vinegar
+          - io.github.shiftey.Desktop
+          - io.github.dvlv.boxbuddyrs
       - scope: user
 
   - type: users
