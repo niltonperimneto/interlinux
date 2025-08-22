@@ -30,9 +30,6 @@ modules:
     remove:
       - firefox
       - firefox-langpacks
-    key:
-      - https://packages.microsoft.com/keys/microsoft.asc
-      - https://dl.google.com/linux/linux_signing_key.pub
 
   - type: default-flatpaks
     configurations:
