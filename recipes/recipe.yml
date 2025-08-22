@@ -1,43 +1,58 @@
----
 # yaml-language-server: $schema=https://schema.blue-build.org/recipe-v1.json
-# image will be published to ghcr.io/<user>/<name>
+# This yaml file was create for the purpose of building a custom image for the International Ingles school.
+# Any questions or issues can be directed to the e-mail: niltonperimneto@gmail.com
+# The image is based on Fedora Kinoite and includes various educational tools and software.
+
 name: Fedora-InternationalIngles
-# description will be included in the image's metadata
-description: This is my personal OS image.
+description: This is a custom image made for the International Ingles school focused on an educational environment.
+base-image: ghcr.io/ublue-os/kinoite-main
+image-version: 42
 
-# the base image to build on top of (FROM) and the version tag to use
-base-image: ghcr.io/ublue-os/silverblue-main
-image-version: 41 # latest is also supported if you want new updates ASAP
-
-# module configuration, executed in order
-# you can include multiple instances of the same module
 modules:
   - type: files
     files:
+      - source: usr
+        destination: /
+      - source: etc
+        destination: /
       - source: system
-        destination: / # copies files/system/* (* means everything inside it) into your image's root folder /
+        destination: /
+      - source: home
+        destination: /
 
   - type: rpm-ostree
-    repos:
-      - https://copr.fedorainfracloud.org/coprs/atim/starship/repo/fedora-%OS_VERSION%/atim-starship-fedora-%OS_VERSION%.repo
     install:
-      - micro
-      - starship
+      - code
+      - google-chrome-stable
+      - pycharm-community
     remove:
-      # example: removing firefox (in favor of the flatpak)
-      # "firefox" is the main package, "firefox-langpacks" is a dependency
       - firefox
-      - firefox-langpacks # also remove firefox dependency (not required for all packages, this is a special case)
+      - firefox-langpacks
+    key:
+      - https://packages.microsoft.com/keys/microsoft.asc
+      - https://dl.google.com/linux/linux_signing_key.pub
 
   - type: default-flatpaks
     configurations:
-      - notify: true # Send notification after install/uninstall is finished (true/false)
+      - notify: true
         scope: system
-        # If no repo information is specified, Flathub will be used by default
-        install: # system flatpaks we want all users to have and not remove
-          - org.mozilla.firefox
-          - org.gnome.Loupe
-      - scope: user # Also add Flathub user repo, but no user packages
+        install:
+          - com.usebottles.bottles
+          - it.mijorus.gearlever
+          - com.github.tchx84.Flatseal
+          - com.mojang.Minecraft
+          - io.dbeaver.DBeaverCommunity
+          - edu.mit.Scratch
+          - org.onlyoffice.desktopeditors
+          - org.vinegarhq.Vinegar
+      - scope: user
 
-  - type: signing # this sets up the proper policy & signing files for signed images to work fully
+  - type: users
+    users:
+      - name: inglesinternational
+        full-name: Ingles International
+        groups:
+          - wheel
+          - users
 
+  - type: signing
