@@ -3,7 +3,7 @@
 # Any questions or issues can be directed to the e-mail: niltonperimneto@gmail.com
 # The image is based on Fedora Kinoite and includes various educational tools and software.
 
-name: Fedora-InternationalIngles
+name: inglesinternational-os
 description: This is a custom image made for the International Ingles school focused on an educational environment.
 base-image: ghcr.io/ublue-os/kinoite-main
 image-version: 42
@@ -12,13 +12,13 @@ modules:
   - type: files
     files:
       - source: usr
-        destination: /
+        destination: /usr
       - source: etc
-        destination: /
+        destination: /etc
       - source: system
         destination: /
       - source: home
-        destination: /
+        destination: /home
 
   - type: rpm-ostree
     install:
@@ -48,13 +48,5 @@ modules:
           - io.github.shiftey.Desktop
           - io.github.dvlv.boxbuddyrs
       - scope: user
-
-  - type: users
-    users:
-      - name: inglesinternational
-        full-name: Ingles International
-        groups:
-          - wheel
-          - users
 
   - type: signing
