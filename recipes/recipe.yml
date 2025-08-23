@@ -11,14 +11,12 @@ image-version: 42
 modules:
   - type: files
     files:
-      - source: usr
-        destination: /
-      - source: etc
-        destination: /
-      - source: system
-        destination: /
-      - source: home
-        destination: /
+      - source: system/usr
+        destination: /usr
+      - source: system/etc
+        destination: /etc
+      - source: system/home
+        destination: /home
 
   - type: rpm-ostree
     install:
@@ -33,7 +31,7 @@ modules:
     keys:
       - https://packages.microsoft.com/keys/microsoft.asc
       - https://dl.google.com/linux/linux_signing_key.pub
-      
+
   - type: default-flatpaks
     configurations:
       - notify: true
