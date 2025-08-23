@@ -12,11 +12,11 @@ modules:
   - type: files
     files:
       - source: system/usr
-        destination: /usr
+        destination: /
       - source: system/etc
-        destination: /etc
+        destination: /
       - source: system/home
-        destination: /home
+        destination: /
 
   - type: rpm-ostree
     install:
