@@ -11,14 +11,12 @@ image-version: 42
 modules:
   - type: files
     files:
+      - source: system
+        destination: /
       - source: usr
         destination: /usr
       - source: etc
         destination: /etc
-      - source: system
-        destination: /
-      - source: home
-        destination: /home
 
   - type: rpm-ostree
     install:
