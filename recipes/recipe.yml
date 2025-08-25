@@ -31,8 +31,6 @@ modules:
     configurations:
       - notify: true
         scope: user
-          repo:
-        title: Flathub (user)
         install:
           - com.usebottles.bottles
           - it.mijorus.gearlever
