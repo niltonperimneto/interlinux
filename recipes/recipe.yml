@@ -46,10 +46,10 @@ modules:
           - io.github.dvlv.boxbuddyrs
           - com.jetbrains.PyCharm-Community
       - scope: user
-      
+
   - type: script
     scripts:
-      - scripts/setfish.sh
-      - scripts/setmicro.sh
+      - setfish.sh
+      - setmicro.sh
 
   - type: signing
