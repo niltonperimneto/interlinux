@@ -23,9 +23,8 @@ modules:
       - code
       - google-chrome-stable
       - python3-pip
-    remove:
-      - firefox
-      - firefox-langpacks
+      - micro
+      - fish
     keys:
       - https://packages.microsoft.com/keys/microsoft.asc
       - https://dl.google.com/linux/linux_signing_key.pub
@@ -33,7 +32,7 @@ modules:
   - type: default-flatpaks
     configurations:
       - notify: true
-        scope: system
+        scope: user
         install:
           - com.usebottles.bottles
           - it.mijorus.gearlever
@@ -45,10 +44,14 @@ modules:
           - org.vinegarhq.Vinegar
           - io.github.shiftey.Desktop
           - io.github.dvlv.boxbuddyrs
+<<<<<<< HEAD
       - scope: user
   - type: script
     scripts:
       - scripts/setfish.sh
       - scripts/setmicro.sh
+=======
+          - com.jetbrains.PyCharm-Community
+>>>>>>> 1e91550e707651df788589f01bfbf1924ea9e42b
 
   - type: signing
