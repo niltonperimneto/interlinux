@@ -44,5 +44,6 @@ modules:
           - org.vinegarhq.Vinegar
           - io.github.shiftey.Desktop
           - io.github.dvlv.boxbuddyrs
+          - com.jetbrains.PyCharm-Community
 
   - type: signing
