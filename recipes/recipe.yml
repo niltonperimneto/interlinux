@@ -44,14 +44,11 @@ modules:
           - org.vinegarhq.Vinegar
           - io.github.shiftey.Desktop
           - io.github.dvlv.boxbuddyrs
-<<<<<<< HEAD
+          - com.jetbrains.PyCharm-Community
       - scope: user
   - type: script
     scripts:
       - scripts/setfish.sh
       - scripts/setmicro.sh
-=======
-          - com.jetbrains.PyCharm-Community
->>>>>>> 1e91550e707651df788589f01bfbf1924ea9e42b
 
   - type: signing
