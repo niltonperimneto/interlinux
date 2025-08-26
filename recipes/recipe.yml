@@ -1,6 +1,6 @@
 # yaml-language-server: $schema=https://schema.blue-build.org/recipe-v1.json
 # This yaml file was create for the purpose of building a custom image for the International Ingles school.
-# Any questions or issues can be directed to the e-mail: niltonperimneto@gmail.com
+# Any questions or issues can be directed to the github repo or to the e-mail adress: niltonperimneto@gmail.com
 # The image is based on Fedora Kinoite and includes various educational tools and software.
 
 name: inglesinternational-os
@@ -46,6 +46,7 @@ modules:
           - io.github.dvlv.boxbuddyrs
           - com.jetbrains.PyCharm-Community
       - scope: user
+      
   - type: script
     scripts:
       - scripts/setfish.sh
