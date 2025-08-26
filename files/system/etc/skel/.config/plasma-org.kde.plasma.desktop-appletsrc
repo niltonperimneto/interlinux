@@ -27,7 +27,7 @@ plugin=org.kde.plasma.kickoff
 
 # This is where you set your custom starter menu icon.
 [Containments][2][Applets][3][Configuration][General]
-icon=/usr/share/icons/custom/my-starter-icon.svg
+icon=/usr/share/icons/custom/international.svg
 useCustomIcon=true
 
 # [Applet][4] is the Task Manager.
