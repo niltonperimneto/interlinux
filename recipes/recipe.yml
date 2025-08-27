@@ -9,6 +9,12 @@ base-image: ghcr.io/ublue-os/kinoite-main
 image-version: 42
 
 modules:
+   - type: os-release
+        properties:
+        ID: blue_build
+        ID_LIKE: fedora_kinoite
+        NAME: BlueBuild
+  PRETTY_NAME: BlueBuild Image
   - type: files
     files:
       - source: system
