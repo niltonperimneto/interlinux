@@ -15,11 +15,11 @@ modules:
       ID_LIKE: fedora
       NAME: International OS
       PRETTY_NAME: International OS
-      #VERSION: 2025
+      VERSION: 2025
       #ANSI_COLOR: 0;38;2;60;110;180
       #LOGO: example-logo
-      #HOME_URL: https://kinoite.fedoraproject.org          │
-      #DOCUMENTATION_URL: https://docs.fedoraproject.org/en-US/fedor │
+      #HOME_URL: https://kinoite.fedoraproject.org
+      DOCUMENTATION_URL: https://docs.fedoraproject.org/en-US/fedora
 
   - type: files
     files:
@@ -35,12 +35,16 @@ modules:
       - https://packages.microsoft.com/keys/microsoft.asc
     install:
       - code
+      - https://mirrors.rpmfusion.org/free/fedora/rpmfusion-free-release-$(rpm -E %fedora).noarch.rpm
+      - https://mirrors.rpmfusion.org/nonfree/fedora/rpmfusion-nonfree-release-$(rpm -E %fedora).noarch.rpm
       - python3-pip
       - micro
       - fish
+      - gnome-software
     remove:
       - firefox
       - firefox-langpacks
+      - discover
 
   - type: default-flatpaks
     configurations:
