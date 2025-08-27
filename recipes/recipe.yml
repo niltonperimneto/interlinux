@@ -45,6 +45,7 @@ modules:
       - firefox
       - firefox-langpacks
       - plasma-discover
+      - plasma-discover-notifier
 
   - type: default-flatpaks
     configurations:
