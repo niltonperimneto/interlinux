@@ -15,6 +15,12 @@ modules:
       ID_LIKE: fedora
       NAME: International OS
       PRETTY_NAME: International OS
+      #VERSION: 2025
+      #ANSI_COLOR: 0;38;2;60;110;180
+      #LOGO: example-logo
+      #HOME_URL: https://kinoite.fedoraproject.org          │
+      #DOCUMENTATION_URL: https://docs.fedoraproject.org/en-US/fedor │
+
   - type: files
     files:
       - source: system
