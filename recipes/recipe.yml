@@ -45,7 +45,7 @@ modules:
   - type: default-flatpaks
     configurations:
       - notify: true
-        scope: user
+        scope: system
         install:
           - com.usebottles.bottles
           - it.mijorus.gearlever
