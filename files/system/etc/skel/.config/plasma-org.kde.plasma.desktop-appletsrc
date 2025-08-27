@@ -65,7 +65,7 @@ DialogWidth=720
 
 [Containments][2][Applets][3][Configuration][General]
 favoritesPortedToKAstats=true
-icon=/usr/share/icons/custom/my-starter-icon.svg
+icon=/usr/share/icons/custom/international.svg
 systemFavorites=suspend\\,hibernate\\,reboot\\,shutdown
 useCustomIcon=true
 
