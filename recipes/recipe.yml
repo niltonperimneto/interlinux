@@ -44,7 +44,7 @@ modules:
     remove:
       - firefox
       - firefox-langpacks
-      - discover
+      - plasma-discover
 
   - type: default-flatpaks
     configurations:
