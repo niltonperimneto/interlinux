@@ -3,7 +3,7 @@
 # Any questions or issues can be directed to the github repo or to the e-mail adress: niltonperimneto@gmail.com
 # The image is based on Fedora Kinoite and includes various educational tools and software.
 
-name: inglesinternational-os
+name: interlinux
 description: This is a custom image made for the International Ingles school focused on an educational environment.
 base-image: ghcr.io/ublue-os/kinoite-main
 image-version: 42
@@ -11,10 +11,10 @@ image-version: 42
 modules:
   - type: os-release
     properties:
-      ID: international-os
+      ID: internationallinux-os
       ID_LIKE: fedora
-      NAME: International OS
-      PRETTY_NAME: International OS
+      NAME: International Linux OS
+      PRETTY_NAME: International Linux OS
       #VERSION: 2025
       #ANSI_COLOR: 0;38;2;60;110;180
       #LOGO: example-logo
