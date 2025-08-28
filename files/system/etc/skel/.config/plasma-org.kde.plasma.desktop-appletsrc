@@ -23,7 +23,7 @@ DialogWidth=720
 positions={"1920x1080":[]}
 
 [Containments][1][Wallpaper][org.kde.image][General]
-Image=/usr/share/wallpapers/inglesinternational.png
+Image=file://usr/share/wallpapers/inglesinternational.png
 SlidePaths=/usr/share/wallpapers/
 
 [Containments][2]
