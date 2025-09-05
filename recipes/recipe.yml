@@ -30,7 +30,7 @@ modules:
       - source: system/etc
         destination: /etc
 
-  - type: rpm-ostree
+  - type: dnf
     keys:
       - https://packages.microsoft.com/keys/microsoft.asc
     install:
