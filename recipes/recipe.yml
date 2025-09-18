@@ -39,9 +39,6 @@ modules:
       - python3-pip
       - micro
       - fish
-    remove:
-      - firefox
-      - firefox-langpacks
 
   - type: default-flatpaks
     configurations:
