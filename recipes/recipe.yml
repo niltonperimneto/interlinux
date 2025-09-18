@@ -6,7 +6,7 @@
 name: interlinux
 description: This is a custom image made for the International Ingles school focused on an educational environment.
 base-image: ghcr.io/ublue-os/aurora-dx
-image-version: 42
+image-version: stable
 
 modules:
   - type: os-release
