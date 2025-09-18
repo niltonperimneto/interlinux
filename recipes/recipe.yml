@@ -41,7 +41,6 @@ modules:
       - python3-pip
       - micro
       - fish
-      - gnome-software
     remove:
       - firefox
       - firefox-langpacks
@@ -52,6 +51,7 @@ modules:
         scope: system
         install:
           - com.usebottles.bottles
+          - io.github.kolunmi.Bazaar
           - it.mijorus.gearlever
           - com.github.tchx84.Flatseal
           - com.mojang.Minecraft
