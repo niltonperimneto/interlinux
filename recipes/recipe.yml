@@ -62,7 +62,6 @@ modules:
 
   - type: script
     scripts:
-      - name: Set default configurations of the distro
         commands:
           - plymouth-set-default-theme school-bgrt -R
           - ./setfish.sh
