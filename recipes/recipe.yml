@@ -39,6 +39,7 @@ modules:
       - python3-pip
       - micro
       - fish
+      - plymouth-plugin-script
 
   - type: default-flatpaks
     configurations:
