@@ -11,10 +11,10 @@ image-version: stable
 modules:
   - type: os-release
     properties:
-      ID: internationallinux-os
+      ID: interlinux
       #ID_LIKE: fedora
-      NAME: International Linux OS
-      PRETTY_NAME: International Linux OS
+      NAME: InterLinux
+      PRETTY_NAME: InterLinux
       #VERSION: 2025
       #ANSI_COLOR: 0;38;2;60;110;180
       #LOGO: example-logo
@@ -62,7 +62,10 @@ modules:
 
   - type: script
     scripts:
-      - setfish.sh
-      - setmicro.sh
+      - name: Set default configurations of the distro
+        commands:
+          - plymouth-set-default-theme school-bgrt -R
+          - ./setfish.sh
+          - ./setmicro.sh
 
   - type: signing
