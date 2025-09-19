@@ -5,14 +5,14 @@
 
 name: interlinux
 description: This is a custom image made for the International Ingles school focused on an educational environment.
-base-image: ghcr.io/ublue-os/kinoite-main
-image-version: 42
+base-image: ghcr.io/ublue-os/aurora-dx
+image-version: stable
 
 modules:
   - type: os-release
     properties:
       ID: internationallinux-os
-      ID_LIKE: fedora
+      #ID_LIKE: fedora
       NAME: International Linux OS
       PRETTY_NAME: International Linux OS
       #VERSION: 2025
@@ -36,14 +36,9 @@ modules:
     install:
       - code
       - git
-      - https://mirrors.rpmfusion.org/free/fedora/rpmfusion-free-release-42.noarch.rpm
-      - https://mirrors.rpmfusion.org/nonfree/fedora/rpmfusion-nonfree-release-42.noarch.rpm
       - python3-pip
       - micro
       - fish
-    remove:
-      - firefox
-      - firefox-langpacks
 
   - type: default-flatpaks
     configurations:
