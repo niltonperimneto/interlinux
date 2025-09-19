@@ -62,7 +62,6 @@ modules:
 
   - type: script
     scripts:
-        commands:
           - plymouth-set-default-theme school-bgrt -R
           - ./setfish.sh
           - ./setmicro.sh
