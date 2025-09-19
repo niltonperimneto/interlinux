@@ -1,55 +1,28 @@
-// Set the background color to Fedora's dark blue.
-// You can change this hex code to any color you like (e.g., 0x000000 for black).
 Window.SetBackgroundTopColor (0.09, 0.13, 0.18);    // Rich Black FOGRA 29
 Window.SetBackgroundBottomColor (0.09, 0.13, 0.18); // Rich Black FOGRA 29
 
-// --- LOGO LOADING AND POSITIONING ---
-
-// Load the school's logo from our theme directory.
 school_logo = Image("school-logo.png");
 school_sprite = Sprite(school_logo);
 
-// Try to load the OEM logo from the system's firmware (BGRT).
-// This file only exists on systems that have a firmware logo.
 oem_logo_raw = Image("/sys/firmware/acpi/bgrt/image");
 
-// Get screen dimensions to help with centering.
 screen_width = Window.GetWidth();
 screen_height = Window.GetHeight();
 
-// Check if the OEM logo was successfully loaded.
 if (oem_logo_raw) {
-  // If the OEM logo exists, position it first.
   oem_sprite = Sprite(oem_logo_raw);
 
-  // Center the OEM logo horizontally.
   oem_sprite.SetX(screen_width / 2 - oem_sprite.GetWidth() / 2);
-  // Position it 35% of the way down the screen.
   oem_sprite.SetY(screen_height * 0.35 - oem_sprite.GetHeight() / 2);
 
-  // Now, position the school logo relative to the OEM logo.
-  // Center it horizontally.
   school_sprite.SetX(screen_width / 2 - school_sprite.GetWidth() / 2);
-  // Place it 40 pixels directly below the bottom of the OEM logo.
   school_sprite.SetY(oem_sprite.GetY() + oem_sprite.GetHeight() + 40);
 
 } else {
-  // If no OEM logo was found, just center the school logo on the screen.
   school_sprite.SetX(screen_width / 2 - school_sprite.GetWidth() / 2);
   school_sprite.SetY(screen_height / 2 - school_sprite.GetHeight() / 2);
 }
 
-// --- PROGRESS DOTS (Optional, but looks nice) ---
-progress = 0;
-progress_dot = Image("progress-dot.png"); // Plymouth provides this image
-progress_sprite = Sprite();
-
-fun progress_callback() {
-  progress++;
-  // Create a simple blinking/moving dot animation at the bottom.
-  x = screen_width / 2 + (progress % 10 - 5) * 10;
-  y = screen_height * 0.85;
-  progress_sprite.SetImage(progress_dot);
-  progress_sprite.SetPosition(x, y);
-}
-Plymouth.SetRefreshFunction(progress_callback);
+spinner = Plymouth.Spinner();
+spinner.SetX(screen_width / 2 - spinner.GetWidth() / 2);
+spinner.SetY(screen_height * 0.85 - spinner.GetHeight() / 2); 
