@@ -14,6 +14,5 @@ if ! command -v plymouth-set-default-theme >/dev/null 2>&1; then
 fi
 
 plymouth-set-default-theme "$THEME"
-plymouth-set-default-theme -R
 
-echo "Plymouth theme set to '$THEME'. Reboot to see the new splash screen."
+echo "Plymouth theme set to '$THEME'. The initramfs will be rebuilt on the user's system."
