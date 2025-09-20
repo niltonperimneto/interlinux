@@ -9,7 +9,6 @@ base-image: ghcr.io/ublue-os/aurora-dx
 image-version: stable
 
 modules:
-  - type: initramfs
   - type: os-release
     properties:
       ID: interlinux
@@ -67,5 +66,5 @@ modules:
           - ./setplymouth.sh
           - ./setfish.sh
           - ./setmicro.sh
-
+  - type: initramfs
   - type: signing
