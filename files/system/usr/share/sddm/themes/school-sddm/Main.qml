@@ -2,18 +2,12 @@ import QtQuick 2.0
 import SddmComponents 2.0
 
 Rectangle {
-
-    Loader {
-        source: "file:///usr/share/sddm/themes/breeze/Main.qml"
-    }
-
     Image {
         id: background
-        z: -1 // Place the image behind all other elements
-
+        anchors.fill: parent
         source: "file:///usr/share/wallpapers/Bloqueio.png"
-
-        fillMode: Image.PreserveAspectCrop // Cover the screen without distortion
-        anchors.fill: parent 
+        fillMode: Image.PreserveAspectCrop
+        z: -1
     }
+    // Add your own login form/components here if needed
 }
