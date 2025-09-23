@@ -5,7 +5,7 @@
 
 name: interlinux
 description: This is a custom image made for the International Ingles school focused on an educational environment.
-base-image: ghcr.io/ublue-os/aurora-dx
+base-image: ghcr.io/ublue-os/kinoite
 image-version: stable
 
 modules:

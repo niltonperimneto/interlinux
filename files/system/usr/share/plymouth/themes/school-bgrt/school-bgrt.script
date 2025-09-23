@@ -1,5 +1,5 @@
-Window.SetBackgroundTopColor (0.09, 0.13, 0.18);    // Rich Black FOGRA 29
-Window.SetBackgroundBottomColor (0.09, 0.13, 0.18); // Rich Black FOGRA 29
+Window.SetBackgroundTopColor (0.09, 0.13, 0.18);
+Window.SetBackgroundBottomColor (0.09, 0.13, 0.18);
 
 school_logo = Image("school-logo.png");
 school_sprite = Sprite(school_logo);
