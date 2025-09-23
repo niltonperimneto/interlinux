@@ -1,5 +1,6 @@
 [Plymouth Theme]
 Name=School and OEM BGRT Logo
+Name[pt_br]=Logo da escola e OEM BGRT
 Description=Displays the OEM BGRT logo with the school logo underneath.
 ModuleName=script
 

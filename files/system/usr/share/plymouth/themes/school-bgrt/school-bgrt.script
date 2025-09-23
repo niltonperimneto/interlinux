@@ -4,7 +4,7 @@ Window.SetBackgroundBottomColor (0.09, 0.13, 0.18); // Rich Black FOGRA 29
 school_logo = Image("school-logo.png");
 school_sprite = Sprite(school_logo);
 
-oem_logo_raw = Image("/sys/firmware/acpi/bgrt/image");
+oem_logo_raw = Image("/sys/firmware/acpi/bgrt/bgrt");
 
 screen_width = Window.GetWidth();
 screen_height = Window.GetHeight();
@@ -25,4 +25,4 @@ if (oem_logo_raw) {
 
 spinner = Plymouth.Spinner();
 spinner.SetX(screen_width / 2 - spinner.GetWidth() / 2);
-spinner.SetY(screen_height * 0.85 - spinner.GetHeight() / 2); 
+spinner.SetY(screen_height * 0.85 - spinner.GetHeight() / 2);

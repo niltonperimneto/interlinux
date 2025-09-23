@@ -11,7 +11,7 @@ Rectangle {
         id: background
         z: -1 // Place the image behind all other elements
 
-        source: "file:///usr/share/wallpapers/inglesinternational.png"
+        source: "file:///usr/share/wallpapers/Bloqueio.png"
 
         fillMode: Image.PreserveAspectCrop // Cover the screen without distortion
         anchors.fill: parent 
