@@ -5,4 +5,5 @@ Description=Displays the OEM BGRT logo with the school logo underneath.
 ModuleName=script
 
 [script]
+ImageDir=/usr/share/plymouth/themes/school-bgrt
 ScriptFile=/usr/share/plymouth/themes/school-bgrt/school-bgrt.script

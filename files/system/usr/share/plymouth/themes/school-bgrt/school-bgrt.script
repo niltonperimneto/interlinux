@@ -1,5 +1,11 @@
-Window.SetBackgroundTopColor (0.09, 0.13, 0.18);
-Window.SetBackgroundBottomColor (0.09, 0.13, 0.18);
+# Theme settings
+background_color = (0.09, 0.13, 0.18);
+logo_spacing = 40;
+oem_logo_y_factor = 0.35;
+spinner_y_factor = 0.85;
+
+Window.SetBackgroundTopColor(background_color[0], background_color[1], background_color[2]);
+Window.SetBackgroundBottomColor(background_color[0], background_color[1], background_color[2]);
 
 school_logo = Image("school-logo.png");
 school_sprite = Sprite(school_logo);
@@ -9,20 +15,24 @@ oem_logo_raw = Image("/sys/firmware/acpi/bgrt/bgrt");
 screen_width = Window.GetWidth();
 screen_height = Window.GetHeight();
 
+# Center the school logo horizontally by default
+school_sprite.SetX(screen_width / 2 - school_sprite.GetWidth() / 2);
+
 if (oem_logo_raw) {
   oem_sprite = Sprite(oem_logo_raw);
 
+  # Position OEM logo
   oem_sprite.SetX(screen_width / 2 - oem_sprite.GetWidth() / 2);
-  oem_sprite.SetY(screen_height * 0.35 - oem_sprite.GetHeight() / 2);
+  oem_sprite.SetY(screen_height * oem_logo_y_factor - oem_sprite.GetHeight() / 2);
 
-  school_sprite.SetX(screen_width / 2 - school_sprite.GetWidth() / 2);
-  school_sprite.SetY(oem_sprite.GetY() + oem_sprite.GetHeight() + 40);
+  # Position school logo below OEM logo
+  school_sprite.SetY(oem_sprite.GetY() + oem_sprite.GetHeight() + logo_spacing);
 
 } else {
-  school_sprite.SetX(screen_width / 2 - school_sprite.GetWidth() / 2);
+  # Center school logo vertically if no OEM logo is found
   school_sprite.SetY(screen_height / 2 - school_sprite.GetHeight() / 2);
 }
 
 spinner = Plymouth.Spinner();
 spinner.SetX(screen_width / 2 - spinner.GetWidth() / 2);
-spinner.SetY(screen_height * 0.85 - spinner.GetHeight() / 2);
+spinner.SetY(screen_height * spinner_y_factor - spinner.GetHeight() / 2);
