@@ -36,9 +36,9 @@
      id="namedview1"
      bordercolor="#000000"
      borderopacity="0.25"
-     inkscape:current-layer="g6"
-     inkscape:cx="364.80418"
-     inkscape:cy="392.31298"
+     inkscape:current-layer="svg1"
+     inkscape:cx="260.38696"
+     inkscape:cy="584.87597"
      inkscape:deskcolor="#d1d1d1"
      inkscape:pagecheckerboard="0"
      inkscape:pageopacity="0.0"
@@ -48,7 +48,7 @@
      inkscape:window-width="1920"
      inkscape:window-x="-9"
      inkscape:window-y="-9"
-     inkscape:zoom="1.5994883"
+     inkscape:zoom="1.131009"
      pagecolor="#ffffff"
      showguides="true" />
   <rect
@@ -58,7 +58,10 @@
      height="174.04172"
      x="3.5527137e-15"
      y="304.46841"
-     ry="6.2173057" />
+     ry="6.2173057"
+     inkscape:export-filename="..\files\system\usr\share\plymouth\themes\school-bgrt\watermark.png"
+     inkscape:export-xdpi="95.969292"
+     inkscape:export-ydpi="95.969292" />
   <path
      id="path1"
      class="st0"
@@ -78,32 +81,11 @@
        xml:space="preserve"
        id="text1"
        style="font-stretch:condensed;font-size:80px;font-family:Impact;-inkscape-font-specification:'Impact Condensed';text-align:start;letter-spacing:-1.46533px;writing-mode:lr-tb;direction:ltr;white-space:pre;shape-inside:url(#rect2);fill:#074cae;stroke-width:7.55906;stroke-opacity:0.2;paint-order:markers fill stroke"
-       transform="matrix(0.85987196,0,0,0.85987196,9.0167169,37.095314)"><tspan
+       transform="matrix(0.85987196,0,0,0.85987196,11.539334,112.28791)"><tspan
          x="167.99219"
          y="301.1276"
-         id="tspan8"><tspan
+         id="tspan2"><tspan
    style="fill:#ffffff"
-   id="tspan7">INTER</tspan>LINUX</tspan></text>
-    <text
-       xml:space="preserve"
-       style="font-stretch:condensed;font-size:28.7647px;line-height:0.7;font-family:Impact;-inkscape-font-specification:'Impact Condensed';text-align:start;letter-spacing:-1.74772px;word-spacing:8.70986px;writing-mode:lr-tb;direction:ltr;text-anchor:start;fill:#074cae;stroke-width:5.58715;stroke-opacity:0.2;paint-order:markers fill stroke"
-       x="202.03505"
-       y="248.54834"
-       id="text3"
-       transform="scale(0.77128969,1.2965297)"><tspan
-         x="202.03505"
-         y="248.54834"
-         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:28.7647px;line-height:0.7;font-family:'UbuntuMono Nerd Font Mono';-inkscape-font-specification:'UbuntuMono Nerd Font Mono';letter-spacing:-1.74772px;word-spacing:8.70986px;fill:#ffffff;fill-opacity:1;stroke-width:5.58715"
-         id="tspan4"
-         sodipodi:role="line">An Operating System for</tspan><tspan
-         x="202.03505"
-         y="270.00919"
-         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:28.7647px;line-height:0.7;font-family:'UbuntuMono Nerd Font Mono';-inkscape-font-specification:'UbuntuMono Nerd Font Mono';letter-spacing:-1.74772px;word-spacing:8.70986px;stroke-width:5.58715"
-         id="tspan2"
-         sodipodi:role="line"><tspan
-   style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-family:'UbuntuMono Nerd Font Mono';-inkscape-font-specification:'UbuntuMono Nerd Font Mono Bold'"
-   id="tspan3">Language</tspan> <tspan
-   style="fill:#ffffff;fill-opacity:1"
-   id="tspan5">learners</tspan></tspan></text>
+   id="tspan1">INTER</tspan>LINUX</tspan></text>
   </g>
 </svg>
