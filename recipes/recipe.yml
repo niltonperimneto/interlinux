@@ -5,16 +5,16 @@
 
 name: interlinux
 description: This is a custom image made for the International Ingles school focused on an educational environment.
-base-image: ghcr.io/ublue-os/aurora-dx
+base-image: ghcr.io/ublue-os/aurora
 image-version: stable
 
 modules:
   - type: os-release
     properties:
-      ID: internationallinux-os
+      ID: interlinux
       #ID_LIKE: fedora
-      NAME: International Linux OS
-      PRETTY_NAME: International Linux OS
+      NAME: InterLinux
+      PRETTY_NAME: InterLinux
       #VERSION: 2025
       #ANSI_COLOR: 0;38;2;60;110;180
       #LOGO: example-logo
@@ -39,6 +39,7 @@ modules:
       - python3-pip
       - micro
       - fish
+      - plymouth-plugin-script
 
   - type: default-flatpaks
     configurations:
@@ -62,7 +63,8 @@ modules:
 
   - type: script
     scripts:
-      - setfish.sh
-      - setmicro.sh
-
+          - ./setplymouth.sh
+          - ./setfish.sh
+          - ./setmicro.sh
+  - type: initramfs
   - type: signing
