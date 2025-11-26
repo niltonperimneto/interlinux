@@ -47,6 +47,8 @@ modules:
         scope: system
         install:
           - com.usebottles.bottles
+          - org.inkscape.Inkscape
+          - org.kde.krita
           - io.github.kolunmi.Bazaar
           - it.mijorus.gearlever
           - com.github.tchx84.Flatseal
@@ -63,8 +65,8 @@ modules:
 
   - type: script
     scripts:
-          - ./setplymouth.sh
-          - ./setfish.sh
-          - ./setmicro.sh
+      - ./setplymouth.sh
+      - ./setfish.sh
+      - ./setmicro.sh
   - type: initramfs
   - type: signing
